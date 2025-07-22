@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Renolux</title>
+    <meta name="description" content="Contactez Renolux pour vos projets de construction. Demande de soumission gratuite et consultation personnalisée.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-hammer"></i>
+                    <span>Renolux</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link">Réalisations</a>
+                    <a href="about.html" class="nav-link">À propos</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <div class="language-switcher">
+                        <a href="contact.html" class="lang-link active">FR</a>
+                        <span>|</span>
+                        <a href="contact-en.html" class="lang-link">EN</a>
+                    </div>
+                </div>
+                
+                <div class="nav-contact">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (438) 345-1931</span>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-Nous</h1>
+            <p>Prêt à démarrer votre projet? Contactez-nous dès aujourd'hui</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-detail">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informations de Contact</h2>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+1 (438) 345-1931</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@renolux.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>3390 rue Beausejour<br>H4K 1W4, Montréal, Québec</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Heures d'ouverture</h4>
+                            <p>Lun-Ven: 7h00 - 18h00<br>Sam: 8h00 - 16h00<br>Dim: Fermé</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-calendar"></i>
+                        <div>
+                            <h4>Rendez-vous</h4>
+                            <p>Consultation gratuite sur rendez-vous<br>Devis personnalisé sous 48h</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Demande de Soumission</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Votre nom complet *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Votre email *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Votre téléphone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionner un service *</option>
+                                <option value="construction">Construction</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="engineering">Ingénierie & Architecture</option>
+                                <option value="foundation">Fondation & Structure</option>
+                                <option value="project">Services de Projet</option>
+                                <option value="cleaning">Nettoyage & Entretien</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="budget" name="budget">
+                                <option value="">Budget estimé</option>
+                                <option value="under-50k">Moins de 50 000$</option>
+                                <option value="50k-100k">50 000$ - 100 000$</option>
+                                <option value="100k-250k">100 000$ - 250 000$</option>
+                                <option value="250k-500k">250 000$ - 500 000$</option>
+                                <option value="over-500k">Plus de 500 000$</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="timeline" name="timeline" placeholder="Délai souhaité (ex: 3 mois)">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Détails de votre projet *" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer la demande</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Notre Localisation</h2>
+                <p>Venez nous rencontrer à notre bureau</p>
+            </div>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>3390 rue Beausejour</h3>
+                    <p>H4K 1W4, Montréal, Québec</p>
+                    <a href="https://maps.google.com/?q=3390+rue+Beausejour+Montreal+QC+H4K+1W4" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-directions"></i> Obtenir les directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions Fréquentes</h2>
+                <p>Réponses aux questions les plus courantes</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>Combien de temps faut-il pour obtenir un devis?</h3>
+                    <p>Nous nous engageons à vous fournir un devis détaillé sous 48 heures pour la plupart des projets.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Offrez-vous une consultation gratuite?</h3>
+                    <p>Oui, nous offrons une consultation gratuite pour évaluer votre projet et discuter de vos besoins.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Quels sont vos délais de réalisation?</h3>
+                    <p>Les délais varient selon la complexité du projet. Nous établissons un calendrier détaillé lors de la planification.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Êtes-vous assurés et licenciés?</h3>
+                    <p>Oui, nous sommes entrepreneur RBQ licencié et assuré, avec garantie GCR pour tous nos projets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Renolux</h3>
+                    <p>Entrepreneur général RBQ en construction neuve et rénovation depuis 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#construction">Construction</a></li>
+                        <li><a href="services.html#renovation">Rénovation</a></li>
+                        <li><a href="services.html#engineering">Ingénierie</a></li>
+                        <li><a href="services.html#foundation">Fondation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (438) 345-1931</li>
+                        <li><i class="fas fa-envelope"></i> info@renolux.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 3390 rue Beausejour, H4K 1W4</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Entrepreneur RBQ</li>
+                        <li>Garantie GCR</li>
+                        <li>APCHQ</li>
+                        <li>15+ années d'expérience</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Renolux. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 

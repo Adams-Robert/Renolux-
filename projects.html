@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations - Renolux</title>
+    <meta name="description" content="Découvrez nos projets de construction et rénovation. Portfolio de réalisations résidentielles et commerciales à Montréal.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <i class="fas fa-hammer"></i>
+                    <span>Renolux</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link active">Réalisations</a>
+                    <a href="about.html" class="nav-link">À propos</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                    <div class="language-switcher">
+                        <a href="projects.html" class="lang-link active">FR</a>
+                        <span>|</span>
+                        <a href="projects-en.html" class="lang-link">EN</a>
+                    </div>
+                </div>
+                
+                <div class="nav-contact">
+                    <i class="fas fa-phone"></i>
+                    <span>+1 (438) 345-1931</span>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nos Réalisations</h1>
+            <p>Découvrez nos projets récents de construction et rénovation</p>
+        </div>
+    </section>
+
+    <!-- Project Categories -->
+    <section class="project-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Tous les projets</button>
+                <button class="filter-btn" data-filter="construction">Construction</button>
+                <button class="filter-btn" data-filter="renovation">Rénovation</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="residential">Résidentiel</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="projects-grid">
+                <div class="project-item" data-category="construction residential">
+                    <div class="project-image">
+                        <img src="images/2.jpg" alt="Maison Résidentielle">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Maison Résidentielle</h3>
+                                <p>Construction clé en main</p>
+                                <span class="project-type">Construction</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Maison Familiale Moderne</h3>
+                        <p>Construction complète d'une maison résidentielle de 2500 pi² avec garage double et aménagement paysager.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-ruler-combined"></i> 2500 pi²</span>
+                            <span><i class="fas fa-calendar"></i> 8 mois</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Montréal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="renovation residential">
+                    <div class="project-image">
+                        <img src="images/3.jpg" alt="Rénovation Cuisine">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Rénovation Cuisine</h3>
+                                <p>Transformation complète</p>
+                                <span class="project-type">Rénovation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Rénovation Cuisine Contemporaine</h3>
+                        <p>Rénovation complète d'une cuisine avec îlot central, comptoirs en granit et électroménagers haut de gamme.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-ruler-combined"></i> 400 pi²</span>
+                            <span><i class="fas fa-calendar"></i> 6 semaines</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Laval</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="construction commercial">
+                    <div class="project-image">
+                        <img src="images/4.jpg" alt="Bâtiment Commercial">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Bâtiment Commercial</h3>
+                                <p>Construction neuve</p>
+                                <span class="project-type">Commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Centre Commercial Moderne</h3>
+                        <p>Construction d'un bâtiment commercial de 15,000 pi² avec plusieurs locaux commerciaux et stationnement.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-ruler-combined"></i> 15,000 pi²</span>
+                            <span><i class="fas fa-calendar"></i> 12 mois</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Brossard</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="renovation commercial">
+                    <div class="project-image">
+                        <img src="images/5.jpg" alt="Rénovation Commerciale">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Rénovation Commerciale</h3>
+                                <p>Modernisation complète</p>
+                                <span class="project-type">Commercial</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Modernisation Bureau</h3>
+                        <p>Rénovation complète d'un espace de bureau avec design moderne, éclairage LED et mobilier ergonomique.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-ruler-combined"></i> 5000 pi²</span>
+                            <span><i class="fas fa-calendar"></i> 3 mois</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Montréal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="construction residential">
+                    <div class="project-image">
+                        <img src="images/6.jpg" alt="Condominium">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Projet Condo</h3>
+                                <p>Développement résidentiel</p>
+                                <span class="project-type">Résidentiel</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Complexe Condominiums</h3>
+                        <p>Construction d'un complexe de 24 unités avec aménagements communs, piscine et stationnement souterrain.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-ruler-combined"></i> 48,000 pi²</span>
+                            <span><i class="fas fa-calendar"></i> 18 mois</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Longueuil</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-item" data-category="renovation residential">
+                    <div class="project-image">
+                        <img src="images/1.jpg" alt="Rénovation Salle de Bain">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Salle de Bain</h3>
+                                <p>Rénovation luxueuse</p>
+                                <span class="project-type">Rénovation</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3>Salle de Bain Principale</h3>
+                        <p>Rénovation complète d'une salle de bain principale avec douche à l'italienne, baignoire et vanité double.</p>
+                        <div class="project-specs">
+                            <span><i class="fas fa-ruler-combined"></i> 200 pi²</span>
+                            <span><i class="fas fa-calendar"></i> 4 semaines</span>
+                            <span><i class="fas fa-map-marker-alt"></i> Westmount</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Statistics -->
+    <section class="project-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Projets Complétés</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Années d'Expérience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Clients Satisfaits</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Garantie GCR</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Témoignages Clients</h2>
+                <p>Ce que nos clients disent de nous</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Renolux a transformé notre maison au-delà de nos attentes. L'équipe est professionnelle, ponctuelle et le résultat est exceptionnel."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Marie Dubois</h4>
+                            <span>Rénovation Cuisine - Montréal</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Construction de notre maison de rêve réalisée dans les délais et le budget. Qualité exceptionnelle et service client remarquable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Jean Tremblay</h4>
+                            <span>Construction Résidentielle - Laval</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Expertise technique exceptionnelle pour notre projet commercial. L'équipe a su répondre à tous nos besoins avec professionnalisme."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sophie Martin</h4>
+                            <span>Projet Commercial - Brossard</span>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Votre Projet Suivant?</h2>
+                <p>Transformez votre vision en réalité avec notre expertise</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">Demande de soumission</a>
+                    <a href="tel:+14383451931" class="btn btn-secondary">Appelez-nous</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Renolux</h3>
+                    <p>Entrepreneur général RBQ en construction neuve et rénovation depuis 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#construction">Construction</a></li>
+                        <li><a href="services.html#renovation">Rénovation</a></li>
+                        <li><a href="services.html#engineering">Ingénierie</a></li>
+                        <li><a href="services.html#foundation">Fondation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (438) 345-1931</li>
+                        <li><i class="fas fa-envelope"></i> info@renolux.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 3390 rue Beausejour, H4K 1W4</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Entrepreneur RBQ</li>
+                        <li>Garantie GCR</li>
+                        <li>APCHQ</li>
+                        <li>15+ années d'expérience</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Renolux. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 
